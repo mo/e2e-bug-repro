@@ -7,9 +7,6 @@ exports.config = {
 
   capabilities: [
     {
-      browserName: 'chrome'
-    },
-    {
       browserName: 'firefox',
       'moz:firefoxOptions': {
         //'binary': '/home/somebody/opt/firefox-57.0.4/firefox',
@@ -31,7 +28,14 @@ exports.config = {
   waitforTimeout: 10000,
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
-  services: ['selenium-standalone'],
+  port: '9515',
+  path: '/',
+  services: ['webdriver'],
+   webDriverType: 'geckodriver',
+  webDriverLogs: './',
+  webDriverArgs: [],
+  webDriverKillProcess: true,
+
   framework: 'jasmine',
   reporters: ['spec'],
   jasmineNodeOpts: {
