@@ -1,0 +1,18 @@
+{
+  "name": "e2e-bug-repro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio wdio.conf.js"
+  },
+  "keywords": [],
+  "author": "Martin Olsson <martin@minimum.se> (https://mo.github.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "wdio-jasmine-framework": "^0.3.2",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.12.0"
+  }
+}
