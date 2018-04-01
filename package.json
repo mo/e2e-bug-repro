@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "wdio wdio.conf.js"
+    "test": "wdio wdio.conf.js",
+    "test-firefox-only": "SELENIUM_BROWSER=firefox wdio wdio.conf.js"
   },
   "keywords": [],
   "author": "Martin Olsson <martin@minimum.se> (https://mo.github.io)",

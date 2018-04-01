@@ -150,3 +150,7 @@ exports.config = {
   // onComplete: function(exitCode) {
   // }
 }
+
+if (process.env.SELENIUM_BROWSER) {
+  exports.config.capabilities = exports.config.capabilities.filter(function(cap) { return cap.browserName === process.env.SELENIUM_BROWSER })
+}
